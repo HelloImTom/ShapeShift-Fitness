@@ -1,13 +1,14 @@
 /* PAGE-SPECIFIC STYLES FOR THE ABOUT PAGE */
 
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---           Quote            -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
-@media only screen and (min-width: 0em) {
-    #sbs {
+@media only screen and (min-width: 0rem) {
+    #quote-561 {
         padding: var(--sectionPadding);
+        background-color: #1a1a1a;
 
         .cs-container {
             width: 100%;
@@ -15,146 +16,232 @@
             margin: auto;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            row-gap: calc(40 / 16 * 1rem);
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-left {
-            /* scaling the font size with the view width */
-            font-size: min(2.31vw, 0.7em);
-            /* using ems so we can use font size to scale the whole section */
-            width: calc(631 / 16 * 1em);
-            height: calc(636 / 16 * 1em);
-            position: relative;
-        }
-
-        .cs-picture {
-            border-radius: calc(24 / 16 * 1em);
-            display: block;
-            position: absolute;
-            /* clips img tag corners */
-            overflow: hidden;
-            img {
-                width: 100%;
-                height: 100%;
-                /* makes image act like a background image */
-                object-fit: cover;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-        }
-
-        .cs-picture1 {
-            width: calc(522 / 16 * 1em);
-            height: calc(581 / 16 * 1em);
-            top: 0;
-            left: 0;
-        }
-
-        .cs-picture2 {
-            width: calc(414 / 16 * 1em);
-            height: calc(400 / 16 * 1em);
-            background-color: #fff;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-            /* 6px - 12px */
-            border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-            right: 0;
-            bottom: 0;
-        }
-
-        .cs-right {
-            max-width: calc(542 / 16 * 1rem);
-            margin: auto;
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+            /* 16px - 20px */
+            gap: clamp(1rem, 2vw, 1.25rem);
         }
 
         .cs-topper {
-            text-align: left;
+            /* 16px - 20px */
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            line-height: 1.2em;
+            text-transform: uppercase;
+            text-align: inherit;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            color: var(--bodyTextColorWhite);
             margin-bottom: calc(4 / 16 * 1rem);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: calc(24 / 16 * 1rem);
+
+            &:before {
+                /* yellow line */
+                content: "";
+                width: calc(50 / 16 * 1rem);
+                height: 2px;
+                background: var(--secondary);
+                opacity: 1;
+                display: block;
+            }
+        }
+
+        .cs-quote {
+            /* 31px - 49px */
+            font-size: clamp(1.9375rem, 5.1vw, 3.0625rem);
+            line-height: 1.2em;
+            font-weight: 900;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-name {
+            /* 16px - 20px */
+            font-size: clamp(1rem, 1.7vw, 1.25rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+            color: var(--secondary);
+            display: block;
+            letter-spacing: 0.01em;
+        }
+    }
+}
+                               
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RTsbs-71,
+    #RTsbsr-71,
+    #RTsbst-71 {
+        padding: var(--sectionPadding);
+        background-color: #2b2b2b;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at tablet */
+            max-width: calc(550 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: calc(542 / 16 * 1rem);
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
         }
 
         .cs-title {
-            text-align: left;
-            max-width: calc(800 / 16 * 1rem);
+            color: var(--bodyTextColorWhite);
         }
 
         .cs-text {
-            text-align: left;
-            max-width: calc(750 / 16 * 1rem);
             margin-bottom: calc(16 / 16 * 1rem);
-            color: var(--bodyTextColor);
-
+            color: var(--bodyTextColorWhite);
             &:last-of-type {
                 margin-bottom: calc(32 / 16 * 1rem);
             }
         }
 
-        .cs-flex-group {
-            /* 16px - 32px */
-            padding: clamp(1rem, 3vw, 2rem);
-            background-color: #f7f7f7;
-            border-radius: calc(16 / 16 * 1rem);
+        .cs-picture {
+            width: 95%;
+            max-width: calc(550 / 16 * 1rem);
+            margin: 0;
             position: relative;
-        }
-
-        .cs-flex-p {
-            /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
-            line-height: 1.5em;
-            margin: 0 0 calc(16 / 16 * 1rem);
-            color: #353535;
-        }
-
-        .cs-name {
-            font-size: calc(16 / 16 * 1rem);
-            font-weight: bold;
-            line-height: 1.2em;
-            text-transform: uppercase;
-            margin: 0 0 calc(4 / 16 * 1rem);
-            color: var(--headerColor);
             display: block;
-        }
+            /* width divided by height */
+            aspect-ratio: 312/335;
+            border-radius: calc(16 / 16 * 1rem);
+            z-index: 1;
 
-        .cs-job {
-            font-size: calc(14 / 16 * 1rem);
-            line-height: 1.5em;
-            color: #353535;
-            display: block;
-        }
+            &:before {
+                /* Top right box */
+                content: "";
+                width: calc(160 / 16 * 1rem);
+                /* 202px - 248px */
+                height: clamp(12.625rem, 25vw, 15.5rem);
+                background: var(--secondary);
+                opacity: 1;
+                border-radius: calc(16 / 16 * 1rem);
+                position: absolute;
+                display: block;
+                /* 16px -20px */
+                /* wrapped in a calc function to get a negative clamp value */
+                top: calc(clamp(0.5rem, 2.09vw, 1.25rem) * -1);
+                right: calc(clamp(0.5rem, 2.09vw, 1.25rem) * -1);
+            }
 
-        .cs-quote-icon {
-            /* 60px - 136px */
-            width: clamp(3.75rem, 10vw, 8.5rem);
-            height: auto;
-            position: absolute;
-            /* 16px - 32px */
-            right: clamp(1rem, 4vw, 2rem);
-            bottom: calc(0 / 16 * 1rem);
-        }
+            &:after {
+                /* Bottom left box */
+                content: "";
+                width: calc(160 / 16 * 1rem);
+                /* 202px - 248px */
+                height: clamp(12.625rem, 25vw, 15.5rem);
+                background: var(--secondary);
+                opacity: 1;
+                border-radius: calc(16 / 16 * 1rem);
+                position: absolute;
+                display: block;
+                /* 16px -20px */
+                /* wrapped in a calc function to get a negative clamp value */
+                bottom: calc(clamp(0.5rem, 2.09vw, 1.25rem) * -1);
+                left: calc(clamp(0.5rem, 2.09vw, 1.25rem) * -1);
+                z-index: -1;
+            }
 
-        .cs-button-solid {
-            margin-top: calc(32 / 16 * 1rem);
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: calc(16 / 16 * 1rem);
+            }
         }
     }
 }
 
-/* Desktop - 1024px */
-@media only screen and (min-width: 64em) {
-    #sbs {
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RTsbs-71,
+    #RTsbsr-71,
+    #RTsbst-71 {
         .cs-container {
-            flex-flow: row;
-            justify-content: space-between;
-            gap: calc(52 / 16 * 1rem);
+            max-width: calc(1280 / 16 * 1rem);
+            flex-direction: row;
+            justify-content: flex-start;
+            /* 60px - 128px */
+            gap: clamp(3.75rem, 9.5vw, 8rem);
         }
 
-        .cs-left {
-            font-size: min(1.2vw, 1em);
+        .cs-picture {
+            /* 328px - 502px */
+            width: clamp(20.5rem, 37.5vw, 31.375rem);
+            /* 440px - 520px */
+            height: clamp(27.5rem, 40vw, 32.5rem);
+            /* 16px - 20px */
+            margin: 0 0 0 clamp(1rem, 5vw, 1.25rem);
             flex: none;
         }
 
-        .cs-right {
+        .cs-content {
+            width: 45%;
             margin: 0;
         }
     }
 }
+
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #RTsbsr-71 {
+        background-color: #1a1a1a;
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #RTsbsr-71 {
+        .cs-container {
+            justify-content: flex-end;
+        }
+
+        .cs-picture {
+            /* 16px - 20px */
+            margin-right: clamp(1rem, 5vw, 1.25rem);
+            /* forces it to the left */
+            order: 2;
+        }
+    }
+}                               

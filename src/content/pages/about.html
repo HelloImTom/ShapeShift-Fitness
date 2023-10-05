@@ -15,61 +15,102 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
+
     <!-- ============================================ -->
     <!--                    LANDING                   -->
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
+        <h1 id="home-h">ABOUT US</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+            <source media="(max-width: 600px)" srcset="\assets\images\aboutBackground.jpg">
+            <source media="(min-width: 601px)" srcset="\assets\images\aboutBackground.jpg">
+            <img aria-hidden="true" decoding="async" src="\assets\images\aboutBackground.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
         </picture>
 
     </section>
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Quote                      -->
+<!-- ============================================ -->
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
+<section id="quote-561">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Quote</span>
+            <p class="cs-quote">
+                Shapeshift Fitness has transformed my life. The trainers are passionate, and the support is unmatched. It's been a game-changer for me.
+            <span class="cs-name">Alex T</span>
         </div>
-    </section>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="RTsbs-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="\assets\images\ourMission.jpg">
+            <source media="(min-width: 601px)" srcset="\assets\images\ourMission.jpg">
+            <img loading="lazy" decoding="async" src="\assets\images\ourMission.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Our Mission</span>
+            <h2 class="cs-title">Empowering Your Fitness Journey</h2>
+            <p class="cs-text">
+                Our mission at Shapeshift Fitness is to empower individuals through expert training, personalized nutrition plans, and a supportive community. We're dedicated to helping you achieve your fitness goals and lead a healthier, happier life.
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Meet Our Trainers</a>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="RTsbsr-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="\assets\images\ourFacilities.jpg">
+            <source media="(min-width: 601px)" srcset="\assets\images\ourFacilities.jpg">
+            <img loading="lazy" decoding="async" src="\assets\images\ourFacilities.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Our Facilities</span>
+            <h2 class="cs-title">State-of-the-Art Gym</h2>
+            <p class="cs-text">
+                "Explore our state-of-the-art facilities at Shapeshift Fitness. From cutting-edge equipment to spacious workout areas, locker rooms, and more, we provide everything you need to reach your fitness aspirations comfortably.
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Explore Our Facilities</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Triplet             -->
+<!-- ============================================ -->
+
+<section id="RTsbst-71">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="\assets\images\ourApproach.jpg">
+            <source media="(min-width: 601px)" srcset="\assets\images\ourApproach.jpg">
+            <img loading="lazy" decoding="async" src="\assets\images\ourApproach.jpg" alt="body builder" width="500" height="552" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Our Approach</span>
+            <h2 class="cs-title">Results-Driven Fitness and Wellbeing</h2>
+            <p class="cs-text">
+                At Shapeshift Fitness, we redefine fitness. We're not just about workouts; we're about transformation. With tailored plans, expert guidance, and unwavering support, we're your partners on this exhilarating journey
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">View Upcoming Events</a>
+        </div>
+    </div>
+</section>                              
 
     {% include 'components/cta.html' %}
 
