@@ -1,0 +1,269 @@
+---
+title: 'Classes'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'classes/'
+eleventyNavigation:
+    key: Classes
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/classes.css">
+    <script defer src="\assets\js\timetable.js"></script>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">CLASSES</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="\assets\images\classesBackground.jpg">
+            <source media="(min-width: 601px)" srcset="\assets\images\classesBackground.jpg">
+            <img aria-hidden="true" decoding="async" src="\assets\images\classesBackground.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Timetable                  -->
+    <!-- ============================================ -->
+<section id="sfitness-timetable">
+<div class="cs-container">
+    <div class="cs-content">
+            <span class="cs-topper">Our Fitness Classes Timetable</span>
+            <h2 class="cs-title">Time to Get Moving: Class Calendar</h2>
+            <p class="cs-text">
+                From high-intensity interval training to relaxing yoga sessions, we offer a wide array of classes to suit your needs. Our timetable is designed to accommodate different fitness interests and schedules.
+            </p>
+    </div>
+</div>
+
+<table class="timetable">
+    <tr>
+        <th></th>
+        <th class="day">Monday</th>
+        <th class="day">Tuesday</th>
+        <th class="day">Wednesday</th>
+        <th class="day">Thursday</th>
+        <th class="day">Friday</th>
+        <th class="day">Saturday</th>
+    </tr>
+    <tr>
+        <td class="time">10:00</td>
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="yoga">Yoga</h2>
+                 <span class="event-time">10:00 - 11:00</span>
+                 <p class="trainer">Lily Bennett</p>
+            </div>  
+        </td>
+        <td class = "event-empty">
+        <td class = "event">
+            <div class="event-container">
+                 <h2 class="weightlifting">Weightlifting</h2>
+                 <span class="event-time">10:00 - 11:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="swimming">Swimming</h2>
+                 <span class="event-time">10:00 - 11:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="time">11:00</td>
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="swimming">Swimming</h2>
+                 <span class="event-time">11:00 - 12:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="weightlifting">Weightlifting</h2>
+                 <span class="event-time">11:00 - 12:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+        <td class = "event-empty">
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="crossfit">Crossfit</h2>
+                 <span class="event-time">11:00 - 12:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+        <td class = "event-empty">
+        <td class = "event-empty">
+    </tr>
+    <tr>
+        <td class="time">12:00</td>
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class = "event-empty">
+    </tr>
+    <tr>
+        <td class="time">13:00</td>
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="spin">Spin</h2>
+                 <span class="event-time">13:00 - 14:00</span>
+                 <p class="trainer">Lily Bennett</p>
+            </div>
+        </td> 
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="yoga">Yoga</h2>
+                 <span class="event-time">13:00 - 14:00</span>
+                 <p class="trainer">Lily Bennett</p>
+            </div>
+        </td> 
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="swimming">Swimming</h2>
+                 <span class="event-time">13:00 - 14:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="weightlifting">Weightlifting</h2>
+                 <span class="event-time">13:00 - 14:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td class="time">14:00</td>
+        <td class = "event-empty">
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="spin">Spin</h2>
+                 <span class="event-time">14:00 - 15:00</span>
+                 <p class="trainer">Lily Bennett</p>
+            </div>
+        </td> 
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class = "event-empty">
+    </tr>
+    <tr>
+        <td class="time">15:00</td>
+        <td class="event">
+            <div class "event-container">
+                 <h2 class="spin">Spin</h2>
+                 <span class="event-time">15:00 - 16:00</span>
+                 <p class="trainer">Lily Bennett</p>
+            </div>
+        </td> 
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="weightlifting">Weightlifting</h2>
+                 <span class="event-time">15:00 - 16:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+        <td class = "event-empty">
+        <td class = "event-empty">
+    </tr>
+    <tr>
+        <td class="time">16:00</td>
+        <td class = "event-empty">
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="swimming">Swimming</h2>
+                 <span class="event-time">16:00 - 17:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>        
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="yoga">Yoga</h2>
+                 <span class="event-time">16:00 - 17:00</span>
+                 <p class="trainer">Lily Bennett</p>
+            </div>
+        </td> 
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="zumba">Zumba</h2>
+                 <span class="event-time">16:00 - 17:00</span>
+                 <p class="trainer">Lily Bennett</p>
+            </div>
+        </td> 
+        <td class = "event-empty">
+        <td class = "event-empty">
+    </tr>
+    <tr>
+        <td class="time">17:00</td>
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="zumba">Zumba</h2>
+                 <span class="event-time">17:00 - 18:00</span>
+                 <p class="trainer">Lily Bennett</p>
+            </div>
+        </td> 
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="yoga">Yoga</h2>
+                 <span class="event-time">17:00 - 18:00</span>
+                 <p class="trainer">Lily Bennett</p>
+            </div>
+        </td> 
+    </tr>
+    <tr>
+        <td class="time">18:00</td>
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="weightlifting">Weightlifting</h2>
+                 <span class="event-time">18:00 - 19:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+        <td class = "event-empty">
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="crossfit">Crossfit</h2>
+                 <span class="event-time">18:00 - 19:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+        <td class = "event-empty">
+        <td class = "event-empty">
+        <td class="event">
+            <div class="event-container">
+                 <h2 class="swimming">Swimming</h2>
+                 <span class="event-time">18:00 - 19:00</span>
+                 <p class="trainer">Ethan Mitchell</p>
+            </div>
+        </td>
+    </tr>
+</table>
+</section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

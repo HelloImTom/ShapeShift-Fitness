@@ -1,0 +1,206 @@
+/* PAGE-SPECIFIC STYLES FOR THE PROJECTS PAGE */
+body {
+    background-color: #1a1a1a;
+}
+
+#sfitness-timetable {
+@media screen and (min-width: 700px) {
+  .timetable {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #2b2b2b;
+    max-width: 1300px;
+    max-height: 700px;
+    overflow: auto;
+    margin: 70px auto; /* Center horizontally using margin */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.timetable th, .timetable td {
+    border: 1px solid black;
+    padding: 16px;
+    text-align: center;
+}
+.timetable th, .timetable td, .event, .weightlifting, .swimming, .yoga, .crossfit, .spin, .zumba, .trainer, .event-time, .day, .time {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.event {
+    font-weight: bold;
+    transition: all 0.3s; /* Add a smooth transition effect */
+
+    /* Hover effect */
+    :hover {
+        background-color: var(--primary);
+        color: #1a1a1a;
+    }
+}
+
+/* Styling for the activities */
+.weightlifting {
+    color: #3498db; 
+    text-transform: uppercase;
+  }
+  
+  .swimming {
+    color: #e74c3c; 
+    text-transform: uppercase;
+  }
+  
+  .yoga {
+    color: #9b59b6; 
+    text-transform: uppercase;
+  }
+  
+  .crossfit {
+    color: #2ecc71; 
+    text-transform: uppercase;
+  }
+  
+  .spin {
+    color: #f1c40f; 
+    text-transform: uppercase;
+  }
+  
+  .zumba {
+    color: #e67e22; 
+    text-transform: uppercase;
+  }
+  
+  /* Styling for other elements */
+  .trainer, .event-time, .day, .time {
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .trainer {
+    text-transform: uppercase;
+    color: #818181;
+  }
+}
+
+  @media screen and (max-width: 700px) {
+    table {
+      display: none;
+    }
+  
+    
+  }
+
+  .cs-container {
+        width: 100%;
+        max-width: calc(1280 / 16 * 1rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+
+    .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    .cs-card-group {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* 16px - 20px */
+        gap: clamp(1rem, 2.5vw, 1.15rem);
+    }
+
+    .cs-item {
+        list-style: none;
+        width: 100%;
+        max-width: calc(630 / 16 * 1rem);
+        /* 24px - 32px top & bottom */
+        /* 16px - 40px left & right */
+        padding: clamp(1.5rem, 3.15vw, 2rem) clamp(1rem, 3.15vw, 2.5rem);
+        background-color: #f7f7f7;
+        border-radius: calc(16 / 16 * 1rem);
+        /* prevents padding from adding to height and width */
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .cs-quote {
+        width: calc(40 / 16 * 1rem);
+        height: auto;
+        margin-bottom: calc(32 / 16 * 1rem);
+        display: block;
+        filter: invert(94%) sepia(67%) saturate(4096%) hue-rotate(9deg) brightness(98%) contrast(102%);
+    }
+
+    .cs-review {
+        /* 14px - 20px */
+        font-size: clamp(0.875rem, 2vw, 1.25rem);
+        line-height: 1.5em;
+        width: 67%;
+        margin: 0;
+        /* 20px - 40px */
+        margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
+        color: var(--bodyTextColor);
+    }
+
+    .cs-name {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 3vw, 1.5625rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+        /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+        margin-top: auto;
+        color: var(--headerColor);
+        display: block;
+    }
+
+    .cs-job {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.6vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+        display: block;
+    }
+
+    .cs-image {
+        /* 115px - 211px */
+        width: clamp(7.1875rem, 16.5vw, 13.1875rem);
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        right: calc(16 / 16 * 1rem);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .cs-title {
+        color: var(--bodyTextColorWhite);
+    }
+
+    .cs-text {
+        color: var(--bodyTextColorWhite);
+    }
+}
